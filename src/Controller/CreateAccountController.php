@@ -4,7 +4,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class HomeController extends AbstractController{
+class CreateAccountController extends AbstractController{
     public function _construct()
     {
     }
