@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(231, 171, 97);
+}
+
+.tableLog{
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: separate;
+    border-radius: 5px;
+    border-spacing: 20px 2rem;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: bisque;
+}
+
+.resetButton{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    color:blue;
+}
+
+.margin-left{
+    margin-left: 70px;
+}
