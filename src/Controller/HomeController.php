@@ -17,7 +17,7 @@ class HomeController extends AbstractController{
     }
     public function authentify(ManagerRegistry $doctrine,Request $request): Response
     {
-        $user = $doctrine->getRepository(User::class)->findOneBy(['name' => $request->request->get('user')]);
+        $user = $doctrine->getRepository(User::class)->findOneBy(['username' => $request->request->get('user')]);
         if($user && $user->getPassword()==$request->request->get('password'))
         {
             return $this->render('pages/accueil.html.twig');
