@@ -13,7 +13,7 @@ class Product
     #[ORM\Column(type: 'integer')]
     private $id;
 
-    #[ORM\Column(type: 'string', length: 100, nullable: true)]
+    #[ORM\Column(type: 'string', length: 100)]
     private $image;
 
     #[ORM\Column(type: 'string', length: 100)]
@@ -27,6 +27,9 @@ class Product
 
     #[ORM\Column(type: 'string', length: 100)]
     private $description;
+
+    #[ORM\Column(type: 'decimal', precision: 10, scale: 2)]
+    private $price;
 
     public function getId(): ?int
     {
@@ -89,6 +92,18 @@ class Product
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getPrice(): ?string
+    {
+        return $this->price;
+    }
+
+    public function setPrice(string $price): self
+    {
+        $this->price = $price;
 
         return $this;
     }
