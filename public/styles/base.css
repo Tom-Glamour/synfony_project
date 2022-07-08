@@ -3,13 +3,18 @@ body{
 }
 
 .arrierePlan{
-    position: sticky;
+    display: inline-block;
+    position: fixed;
     top:0px;
 }
 
 .right{
     right:0px;
 }
+.left{
+    left:0px;
+}
+
 
 .premierPlan{
     background-color: beige;
@@ -38,7 +43,6 @@ button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
     background-color: yellow;
-    border-radius: 100px;
 }
 
 .resetButton{
