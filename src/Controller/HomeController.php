@@ -18,8 +18,6 @@ class HomeController extends AbstractController{
     public function authentify(ManagerRegistry $doctrine,Request $request): Response
     {
         $user = $doctrine->getRepository(User::class)->findOneBy(['name' => $request->query->get('user')]);
-        
-<<<<<<< Updated upstream
         if($user && $user->getPassword()==$request->query->get('password'))
         {
             return $this->render('pages/accueil.html.twig');
@@ -28,8 +26,5 @@ class HomeController extends AbstractController{
         {
             return $this->render('pages/home.html.twig');
         }
-=======
-        return $this->render('pages/accueil.html.twig');
->>>>>>> Stashed changes
     }
 }

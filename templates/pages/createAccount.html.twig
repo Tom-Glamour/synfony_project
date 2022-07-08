@@ -5,7 +5,7 @@
     <br/>
     <h1>Connexion</h1>
     <br/>
-    <form>
+    <form method="post" action="/create_account_server">
         <table class="tableLog">
             <tr>
                 <td>First name</td> <td><input type="text" id="firstName" name="firstName" required minlength="1" maxlength="100" size="20"></td>
@@ -26,7 +26,7 @@
                 <td>Password</td> <td><input type="password" id="password" name="password" required minlength="1" maxlength="100" size="20"></td>
             </tr>
             <tr>
-                <td>Confirm password</td> <td><input type="password" id="password" name="password" required minlength="1" maxlength="100" size="20"></td>
+                <td>Confirm password</td> <td><input type="password" id="password" name="password2" required minlength="1" maxlength="100" size="20"></td>
             </tr>
             <tr>
                 <td colspan="2" align="center"><button>Submit</button></td>
