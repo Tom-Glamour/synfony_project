@@ -2,6 +2,10 @@ create_account:
     path: /create_account
     controller: App\Controller\CreateAccountController::index
 
+verify:
+    path: /authentify
+    controller: App\Controller\HomeController::authentify
+
 home:
     path: /
     controller: App\Controller\HomeController::index
