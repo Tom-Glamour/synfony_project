@@ -10,6 +10,6 @@ class HomeController extends AbstractController{
     }
     public function index(): Response
     {
-        return $this->render('pages/create_account.html.twig');
+        return $this->render('pages/createAccount.html.twig');
     }
 }
