@@ -2,7 +2,7 @@
 namespace App\Controller;
 
 // ...
-use App\Entity\Product;
+use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -13,13 +13,13 @@ class AdminController extends AbstractController
     {
         $entityManager = $doctrine->getManager();
 
-        $product = new Product();
-        $product->setImage('/');
-        $product->setBrand('Rollex');
-        $product->setModel('Shepherd');
-        $product->setName('Rollex Shepherd');
-        $product->setPrice(1000000);
-        $product->setDescription('Ergonomic and stylish!');
+        $product = new User();
+        $product->setName('me');
+        $product->setSurname('me');
+        $product->setEmail('me');
+        $product->setPassword('meeeeeee');
+        $product->setAddress('me');
+        $product->setAddress('me');
 
 
         // tell Doctrine you want to (eventually) save the Product (no queries yet)

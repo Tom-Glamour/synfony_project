@@ -6,6 +6,10 @@ verify:
     path: /authentify
     controller: App\Controller\HomeController::authentify
 
+admin:
+    path: /admin
+    controller: App\Controller\AdminController::createProduct
+
 home:
     path: /
     controller: App\Controller\HomeController::index
